@@ -1,160 +1,186 @@
-package com.easebuzz.testing.ixigoclone.Base.models;
+package com.easebuzz.testing.ixigoclone.Base.models.Response;
 
-import com.easebuzz.testing.ixigoclone.Base.models.Response.PassengerStatus;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
-public class BaseModel {
+import com.google.gson.annotations.SerializedName;
 
-    @JsonProperty("ShowBlaBlaAd")
+import java.util.List;
+
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+public class TrainInfo {
+
+    @SerializedName("ShowBlaBlaAd")
     private boolean showBlaBlaAd;
 
-    @JsonProperty("ShowCab")
+    @SerializedName("ShowCab")
     private boolean showCab;
 
-    @JsonProperty("Ads")
-    private List<String> ads;
+    @SerializedName("Ads")
+    private List<Object> ads;
 
-    @JsonProperty("WebsiteEvents")
+    @SerializedName("WebsiteEvents")
     private List<String> websiteEvents;
 
-    @JsonProperty("PnrAlternativeAdPosition")
+    @SerializedName("PnrAlternativeAdPosition")
     private int pnrAlternativeAdPosition;
 
-    @JsonProperty("WebsiteAds")
-    private String websiteAds;
+    @SerializedName("WebsiteAds")
+    private Object websiteAds;
 
-    @JsonProperty("SponsoredButtons")
-    private List<String> sponsoredButtons;
+    @SerializedName("SponsoredButtons")
+    private List<Object> sponsoredButtons;
 
-    @JsonProperty("Pnr")
+    @SerializedName("Pnr")
     private String pnr;
 
-    @JsonProperty("TrainNo")
+    @SerializedName("TrainNo")
     private String trainNo;
 
-    @JsonProperty("TrainName")
+    @SerializedName("TrainName")
     private String trainName;
 
-    @JsonProperty("InformationMessage")
+    @SerializedName("InformationMessage")
     private String informationMessage;
 
-    @JsonProperty("Doj")
+    @SerializedName("Doj")
     private String doj;
 
-    @JsonProperty("BookingDate")
+    @SerializedName("BookingDate")
     private String bookingDate;
 
-    @JsonProperty("Quota")
+    @SerializedName("Quota")
     private String quota;
 
-    @JsonProperty("DestinationDoj")
+    @SerializedName("DestinationDoj")
     private String destinationDoj;
 
-    @JsonProperty("SourceDoj")
+    @SerializedName("SourceDoj")
     private String sourceDoj;
 
-    @JsonProperty("From")
+    @SerializedName("From")
     private String from;
 
-    @JsonProperty("To")
+    @SerializedName("To")
     private String to;
 
-    @JsonProperty("ReservationUpto")
+    @SerializedName("ReservationUpto")
     private String reservationUpto;
 
-    @JsonProperty("BoardingPoint")
+    @SerializedName("BoardingPoint")
     private String boardingPoint;
 
-    @JsonProperty("Class")
-    private String trainClass;
+    @SerializedName("Class")
+    private String travelClass;
 
-    @JsonProperty("ChartPrepared")
+    @SerializedName("ChartPrepared")
     private boolean chartPrepared;
 
-    @JsonProperty("BoardingStationName")
+    @SerializedName("BoardingStationName")
     private String boardingStationName;
 
-    @JsonProperty("TrainStatus")
+    @SerializedName("TrainStatus")
     private String trainStatus;
 
-    @JsonProperty("TrainCancelledFlag")
+    @SerializedName("TrainCancelledFlag")
     private boolean trainCancelledFlag;
 
-    @JsonProperty("ReservationUptoName")
+    @SerializedName("ReservationUptoName")
     private String reservationUptoName;
 
-    @JsonProperty("PassengerCount")
+    @SerializedName("PassengerCount")
     private int passengerCount;
 
-    @JsonProperty("PassengerStatus")
+    @SerializedName("PassengerStatus")
     private List<PassengerStatus> passengerStatusList;
 
-    @JsonProperty("CacheTime")
+    @SerializedName("CacheTime")
     private String cacheTime;
 
-    @JsonProperty("Error")
-    private String error;
+    @SerializedName("Error")
+    private Object error;
 
-    @JsonProperty("ErrorCode")
+    @SerializedName("ErrorCode")
     private int errorCode;
 
-    @JsonProperty("DepartureTime")
+    @SerializedName("DepartureTime")
     private String departureTime;
 
-    @JsonProperty("ArrivalTime")
+    @SerializedName("ArrivalTime")
     private String arrivalTime;
 
-    @JsonProperty("ExpectedPlatformNo")
+    @SerializedName("ExpectedPlatformNo")
     private String expectedPlatformNo;
 
-    @JsonProperty("BookingFare")
+    @SerializedName("BookingFare")
     private String bookingFare;
 
-    @JsonProperty("TicketFare")
+    @SerializedName("TicketFare")
     private String ticketFare;
 
-    @JsonProperty("CoachPosition")
+    @SerializedName("CoachPosition")
     private String coachPosition;
 
-    @JsonProperty("Rating")
+    @SerializedName("Rating")
     private double rating;
 
-    @JsonProperty("FoodRating")
+    @SerializedName("FoodRating")
     private double foodRating;
 
-    @JsonProperty("PunctualityRating")
+    @SerializedName("PunctualityRating")
     private double punctualityRating;
 
-    @JsonProperty("CleanlinessRating")
+    @SerializedName("CleanlinessRating")
     private double cleanlinessRating;
 
-    @JsonProperty("SourceName")
+    @SerializedName("SourceName")
     private String sourceName;
 
-    @JsonProperty("DestinationName")
+    @SerializedName("DestinationName")
     private String destinationName;
 
-    @JsonProperty("Duration")
+    @SerializedName("Duration")
     private String duration;
 
-    @JsonProperty("RatingCount")
+    @SerializedName("RatingCount")
     private int ratingCount;
 
-    @JsonProperty("HasPantry")
+    @SerializedName("HasPantry")
     private boolean hasPantry;
 
-    @JsonProperty("BookedInConfirmtkt")
-    private boolean bookedInConfirmtkt;
+    @SerializedName("BookedInConfirmtkt")
+    private boolean bookedInConfirmTkt;
 
-    @JsonProperty("BookedByUser")
+    @SerializedName("BookedByUser")
     private boolean bookedByUser;
 
-    @JsonProperty("BookingId")
+    @SerializedName("BookingId")
     private String bookingId;
 
-    @JsonProperty("GroupingId")
-    private String groupingId;
+    @SerializedName("GroupingId")
+    private Object groupingId;
+
+    @SerializedName("OptVikalp")
+    private boolean optVikalp;
+
+    @SerializedName("VikalpData")
+    private String vikalpData;
+
+    @SerializedName("VikalpTransferred")
+    private boolean vikalpTransferred;
+
+    @SerializedName("VikalpTransferredMessage")
+    private String vikalpTransferredMessage;
+
+    @SerializedName("FlightBannerUrl")
+    private String flightBannerUrl;
+
+    // Getters and setters
+    // ... (You can generate getters and setters for these fields)
 
     public boolean isShowBlaBlaAd() {
         return showBlaBlaAd;
@@ -172,11 +198,11 @@ public class BaseModel {
         this.showCab = showCab;
     }
 
-    public List<String> getAds() {
+    public List<Object> getAds() {
         return ads;
     }
 
-    public void setAds(List<String> ads) {
+    public void setAds(List<Object> ads) {
         this.ads = ads;
     }
 
@@ -196,19 +222,19 @@ public class BaseModel {
         this.pnrAlternativeAdPosition = pnrAlternativeAdPosition;
     }
 
-    public String getWebsiteAds() {
+    public Object getWebsiteAds() {
         return websiteAds;
     }
 
-    public void setWebsiteAds(String websiteAds) {
+    public void setWebsiteAds(Object websiteAds) {
         this.websiteAds = websiteAds;
     }
 
-    public List<String> getSponsoredButtons() {
+    public List<Object> getSponsoredButtons() {
         return sponsoredButtons;
     }
 
-    public void setSponsoredButtons(List<String> sponsoredButtons) {
+    public void setSponsoredButtons(List<Object> sponsoredButtons) {
         this.sponsoredButtons = sponsoredButtons;
     }
 
@@ -316,12 +342,12 @@ public class BaseModel {
         this.boardingPoint = boardingPoint;
     }
 
-    public String getTrainClass() {
-        return trainClass;
+    public String getTravelClass() {
+        return travelClass;
     }
 
-    public void setTrainClass(String trainClass) {
-        this.trainClass = trainClass;
+    public void setTravelClass(String travelClass) {
+        this.travelClass = travelClass;
     }
 
     public boolean isChartPrepared() {
@@ -388,11 +414,11 @@ public class BaseModel {
         this.cacheTime = cacheTime;
     }
 
-    public String getError() {
+    public Object getError() {
         return error;
     }
 
-    public void setError(String error) {
+    public void setError(Object error) {
         this.error = error;
     }
 
@@ -524,12 +550,12 @@ public class BaseModel {
         this.hasPantry = hasPantry;
     }
 
-    public boolean isBookedInConfirmtkt() {
-        return bookedInConfirmtkt;
+    public boolean isBookedInConfirmTkt() {
+        return bookedInConfirmTkt;
     }
 
-    public void setBookedInConfirmtkt(boolean bookedInConfirmtkt) {
-        this.bookedInConfirmtkt = bookedInConfirmtkt;
+    public void setBookedInConfirmTkt(boolean bookedInConfirmTkt) {
+        this.bookedInConfirmTkt = bookedInConfirmTkt;
     }
 
     public boolean isBookedByUser() {
@@ -548,11 +574,11 @@ public class BaseModel {
         this.bookingId = bookingId;
     }
 
-    public String getGroupingId() {
+    public Object getGroupingId() {
         return groupingId;
     }
 
-    public void setGroupingId(String groupingId) {
+    public void setGroupingId(Object groupingId) {
         this.groupingId = groupingId;
     }
 
@@ -596,20 +622,241 @@ public class BaseModel {
         this.flightBannerUrl = flightBannerUrl;
     }
 
-    @JsonProperty("OptVikalp")
-    private boolean optVikalp;
+    // PassengerStatus class
+    public static class PassengerStatus {
+        @SerializedName("ReferenceId")
+        private Object referenceId;
 
-    @JsonProperty("VikalpData")
-    private String vikalpData;
+        @SerializedName("Pnr")
+        private Object pnr;
 
-    @JsonProperty("VikalpTransferred")
-    private boolean vikalpTransferred;
+        @SerializedName("Number")
+        private int number;
 
-    @JsonProperty("VikalpTransferredMessage")
-    private String vikalpTransferredMessage;
+        @SerializedName("Prediction")
+        private Object prediction;
 
-    @JsonProperty("FlightBannerUrl")
-    private String flightBannerUrl;
+        @SerializedName("PredictionPercentage")
+        private Object predictionPercentage;
 
+        @SerializedName("ConfirmTktStatus")
+        private Object confirmTktStatus;
+
+        @SerializedName("Coach")
+        private String coach;
+
+        @SerializedName("Berth")
+        private int berth;
+
+        @SerializedName("BookingStatus")
+        private String bookingStatus;
+
+        @SerializedName("CurrentStatus")
+        private String currentStatus;
+
+        @SerializedName("CoachPosition")
+        private String coachPosition;
+
+        @SerializedName("BookingBerthNo")
+        private String bookingBerthNo;
+
+        @SerializedName("BookingCoachId")
+        private String bookingCoachId;
+
+        @SerializedName("BookingStatusNew")
+        private String bookingStatusNew;
+
+        @SerializedName("BookingStatusIndex")
+        private String bookingStatusIndex;
+
+        @SerializedName("CurrentBerthNo")
+        private String currentBerthNo;
+
+        @SerializedName("CurrentCoachId")
+        private String currentCoachId;
+
+        @SerializedName("BookingBerthCode")
+        private Object bookingBerthCode;
+
+        @SerializedName("CurrentBerthCode")
+        private Object currentBerthCode;
+
+        @SerializedName("CurrentStatusNew")
+        private String currentStatusNew;
+
+        @SerializedName("CurrentStatusIndex")
+        private String currentStatusIndex;
+
+        // Getters and setters
+        // ... (You can generate getters and setters for these fields)
+
+        public Object getReferenceId() {
+            return referenceId;
+        }
+
+        public void setReferenceId(Object referenceId) {
+            this.referenceId = referenceId;
+        }
+
+        public Object getPnr() {
+            return pnr;
+        }
+
+        public void setPnr(Object pnr) {
+            this.pnr = pnr;
+        }
+
+        public int getNumber() {
+            return number;
+        }
+
+        public void setNumber(int number) {
+            this.number = number;
+        }
+
+        public Object getPrediction() {
+            return prediction;
+        }
+
+        public void setPrediction(Object prediction) {
+            this.prediction = prediction;
+        }
+
+        public Object getPredictionPercentage() {
+            return predictionPercentage;
+        }
+
+        public void setPredictionPercentage(Object predictionPercentage) {
+            this.predictionPercentage = predictionPercentage;
+        }
+
+        public Object getConfirmTktStatus() {
+            return confirmTktStatus;
+        }
+
+        public void setConfirmTktStatus(Object confirmTktStatus) {
+            this.confirmTktStatus = confirmTktStatus;
+        }
+
+        public String getCoach() {
+            return coach;
+        }
+
+        public void setCoach(String coach) {
+            this.coach = coach;
+        }
+
+        public int getBerth() {
+            return berth;
+        }
+
+        public void setBerth(int berth) {
+            this.berth = berth;
+        }
+
+        public String getBookingStatus() {
+            return bookingStatus;
+        }
+
+        public void setBookingStatus(String bookingStatus) {
+            this.bookingStatus = bookingStatus;
+        }
+
+        public String getCurrentStatus() {
+            return currentStatus;
+        }
+
+        public void setCurrentStatus(String currentStatus) {
+            this.currentStatus = currentStatus;
+        }
+
+        public String getCoachPosition() {
+            return coachPosition;
+        }
+
+        public void setCoachPosition(String coachPosition) {
+            this.coachPosition = coachPosition;
+        }
+
+        public String getBookingBerthNo() {
+            return bookingBerthNo;
+        }
+
+        public void setBookingBerthNo(String bookingBerthNo) {
+            this.bookingBerthNo = bookingBerthNo;
+        }
+
+        public String getBookingCoachId() {
+            return bookingCoachId;
+        }
+
+        public void setBookingCoachId(String bookingCoachId) {
+            this.bookingCoachId = bookingCoachId;
+        }
+
+        public String getBookingStatusNew() {
+            return bookingStatusNew;
+        }
+
+        public void setBookingStatusNew(String bookingStatusNew) {
+            this.bookingStatusNew = bookingStatusNew;
+        }
+
+        public String getBookingStatusIndex() {
+            return bookingStatusIndex;
+        }
+
+        public void setBookingStatusIndex(String bookingStatusIndex) {
+            this.bookingStatusIndex = bookingStatusIndex;
+        }
+
+        public String getCurrentBerthNo() {
+            return currentBerthNo;
+        }
+
+        public void setCurrentBerthNo(String currentBerthNo) {
+            this.currentBerthNo = currentBerthNo;
+        }
+
+        public String getCurrentCoachId() {
+            return currentCoachId;
+        }
+
+        public void setCurrentCoachId(String currentCoachId) {
+            this.currentCoachId = currentCoachId;
+        }
+
+        public Object getBookingBerthCode() {
+            return bookingBerthCode;
+        }
+
+        public void setBookingBerthCode(Object bookingBerthCode) {
+            this.bookingBerthCode = bookingBerthCode;
+        }
+
+        public Object getCurrentBerthCode() {
+            return currentBerthCode;
+        }
+
+        public void setCurrentBerthCode(Object currentBerthCode) {
+            this.currentBerthCode = currentBerthCode;
+        }
+
+        public String getCurrentStatusNew() {
+            return currentStatusNew;
+        }
+
+        public void setCurrentStatusNew(String currentStatusNew) {
+            this.currentStatusNew = currentStatusNew;
+        }
+
+        public String getCurrentStatusIndex() {
+            return currentStatusIndex;
+        }
+
+        public void setCurrentStatusIndex(String currentStatusIndex) {
+            this.currentStatusIndex = currentStatusIndex;
+        }
+    }
 }
 
